@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Ecochase.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <style>
+        body {
+            
+            margin-left:12%;
+            margin-right:20%;
+        }
+
+    </style>
+    
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="title" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+            <form id="form1" runat="server">
+                <div class="wrapper">
+                    <div class="header">
+                        <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Images/logo1.jpeg" Width="148px" />
+                        
+                        <asp:Image ID="Image2" runat="server" Height="139px" ImageUrl="~/Images/banner_3.jpg" Width="877px" />
+                        <br />
+                        
+                    </div>
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" CssClass="horizontal-separator" OnMenuItemClick="Menu1_MenuItemClick">
+                            <DynamicHoverStyle BackColor="#FF9933" />
+                            <Items>
+                                
+                                <asp:MenuItem Text="Dashboard" Value="Dashboard" NavigateUrl="~/Dashboard.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Search" Value="Search" NavigateUrl="~/Search.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Report" Value="Report" NavigateUrl="~/Report.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Edit Profile" Value="Edit Profile" NavigateUrl="~/Edit_Profile.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Help" Value="Help" NavigateUrl="~/Help.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                            </Items>
+                            <StaticMenuItemStyle HorizontalPadding="52px" ForeColor="White" />
+                            <StaticMenuStyle BackColor="#FFCC66" BorderColor="#FF9933" HorizontalPadding="50px" VerticalPadding="10px" />
+                        </asp:Menu>
+                    </div>
+                    <div class="content">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            
+                            </asp:ContentPlaceHolder>   
+                    </div>
+
+                    <div class="footer">
+                        <h3>&copy; 2022 All Rights Reserved | Ecochase</h3>
+                    </div>
+                </div>
+           
+    
+            <p>
+                &nbsp;</p>
+           
+    
+            </form>
+           
+    
+</body>
+</html>
