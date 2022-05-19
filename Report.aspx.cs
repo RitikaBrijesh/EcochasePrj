@@ -26,7 +26,7 @@ namespace Ecochase
             try
             {
                 con.Open();
-                Response.Write(stDate);
+                //Response.Write(stDate);
                 String str = "SELECT * FROM usrActivity where username='" + Session["user"].ToString() + "' and actdate between '" + stDate.Text + "' and '" + endDate.Text + "'";
                 cmd = new SqlCommand(str, con);
 
@@ -36,16 +36,21 @@ namespace Ecochase
                            
                 sdr = cmd.ExecuteReader();
 
-                if (sdr.Read())
+                if (sdr.HasRows)
                 {
                     GridView1.DataSource = sdr;
                     GridView1.DataBind();
                 }
                 else
                 {
-                    Label1.Text = "No records Found";
+                    DataTable dt = new DataTable();
+                    GridView1.DataSource = dt;
+                    GridView1.DataBind();
+                    //Visible = true;
+                    //Label2.Text = "No records Found";
+
                 }
-                
+
             }
             catch (Exception ex)
             {

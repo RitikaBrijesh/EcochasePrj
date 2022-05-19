@@ -22,7 +22,7 @@ namespace Ecochase
                 con = new SqlConnection(@"Data Source=DESKTOP-2AJ3R13\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
                 con.Open();
 
-                lblUpdate.Text = "Welcome " + Session["user"].ToString();
+                lblUpdate.Text = "Welcome " + Session["user"].ToString()+"!";
 
                 string checkuser = "select * from signUp where username='" + Session["user"].ToString() + "'";
                 cmd = new SqlCommand(checkuser, con);

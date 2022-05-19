@@ -12,6 +12,15 @@
             margin-right:20%;
         }
 
+        .wrapper{
+            font-weight:bold;
+        }
+
+        #Menu1 menuitem:hover{
+            background-color:yellow;
+            font-size:28px;
+        }
+
     </style>
     
     <title></title>
@@ -43,7 +52,7 @@
                                 <asp:MenuItem Text="Help" Value="Help" NavigateUrl="~/Help.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/Login.aspx"></asp:MenuItem>
                             </Items>
-                            <StaticMenuItemStyle HorizontalPadding="52px" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="45px" ForeColor="White" />
                             <StaticMenuStyle BackColor="#FFCC66" BorderColor="#FF9933" HorizontalPadding="50px" VerticalPadding="10px" />
                         </asp:Menu>
                     </div>

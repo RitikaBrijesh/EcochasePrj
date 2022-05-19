@@ -34,7 +34,7 @@ namespace Ecochase
                 if (obj > 0)
                 {
                     Session["user"] = txtUser.Text;
-                    Response.Redirect("SignupPage.aspx");
+                    Response.Redirect("Dashboard.aspx");
                 }
                 else
                 {
@@ -55,6 +55,9 @@ namespace Ecochase
             Response.Redirect("SignupPage.aspx");
         }
 
-        
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ForgotPass.aspx");
+        }
     }
 }

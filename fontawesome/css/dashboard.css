@@ -1,0 +1,50 @@
+﻿body {
+}
+
+.score {
+    width: 200px;
+    height: 40px;
+    background-color: #087322;
+    color: white;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(30, 21, 49, 0.3);
+    margin: 0px 450px;
+    border-radius: 10px;
+}
+
+.carpool {
+    display: flex;
+}
+
+    .carpool #car {
+        background-color: green;
+        color: white;
+        font-size: 18px;
+        width: 500px;
+        height: 130px;
+        padding: 5px;
+        margin-left: 20px;
+        border-radius: 5px;
+        box-shadow: 0 20px 20px rgba(30, 21, 49, 0.3);
+        text-align: center;
+        justify-content: space-around;
+    }
+
+        .carpool #car:hover {
+            background-color: #294C01;
+            width: 510px;
+        }
+
+        .carpool #car #point {
+            background-color: yellow;
+            height: 50px;
+            width: 50px;
+            border-radius: 15px;
+            margin-right: 50px;
+        }
+
+#activity {
+    font-size: 20px;
+    padding: 5px;
+    text-shadow: 2px 2px 4px #000000;
+}

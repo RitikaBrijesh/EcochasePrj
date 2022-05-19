@@ -86,6 +86,7 @@
     <Content Include="fontawesome\css\all.min.css" />
     <Content Include="fontawesome\css\brands.css" />
     <Content Include="fontawesome\css\brands.min.css" />
+    <Content Include="fontawesome\css\dashboard.css" />
     <Content Include="fontawesome\css\fontawesome.css" />
     <Content Include="fontawesome\css\fontawesome.min.css" />
     <Content Include="fontawesome\css\regular.css" />
@@ -2013,6 +2014,7 @@
     <Content Include="fontawesome\webfonts\fa-v4compatibility.woff2" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
