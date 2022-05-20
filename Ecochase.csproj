@@ -1883,6 +1883,7 @@
     <Content Include="Images\opt5.png" />
     <Content Include="Images\opt6.png" />
     <Content Include="Images\sign.png" />
+    <Content Include="Images\story.png" />
     <Content Include="Images\Story1.png" />
     <Content Include="Images\usericon.png" />
     <Content Include="Login.aspx" />

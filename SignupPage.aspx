@@ -1,4 +1,5 @@
-﻿    <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignupPage.aspx.cs" Inherits="Ecochase.SignupPage" %>
+﻿
+    <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignupPage.aspx.cs" Inherits="Ecochase.SignupPage" %>
 
 <!DOCTYPE html>
 
@@ -27,7 +28,7 @@
             margin-left:350px;
             background-color:white;
             width:790px;
-            
+            height:600px;
             box-shadow: 0 30px 50px rgba(30, 21, 49, 0.3);
         }
 
@@ -73,6 +74,21 @@
 
         .back{
             margin-left:0px;
+        }
+
+        .side h2{
+            text-align:center;
+            margin-top:40px;
+            font-size:25px;
+            font-weight:bold;
+            color:black;
+        }
+        #demo{
+            font-size:15px;
+        }
+
+        .side .img{
+            margin-bottom:20px;
         }
     </style>
     
@@ -129,7 +145,10 @@
                     </div>
                 </div>
                 <div class="side">
-                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/sign.png" Height="500px" Width="400px" />
+                    <br/><br/>
+                    <h2>Welcome To Ecochase!</h2>
+                    <p id="demo">A Tracking Tool for Environmental <br/> Activities in your day to day life!</p>
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/story.png" Height="400px" Width="400px" CssClass="img" />
                 </div>
             </div>
             </center>
