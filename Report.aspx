@@ -44,6 +44,8 @@
             border-radius:2px;
             height:30px;
         }
+
+        
     </style>
 
 </asp:Content>
@@ -73,7 +75,7 @@
             <HeaderStyle BackColor="#006600" CssClass="headers" ForeColor="White" Height="20px" />
             <RowStyle CssClass="rows" BackColor="#F7F6F3"/>
         <EmptyDataTemplate>
-            <div align="center"> No Records Found</div>
+            <div align="center" CssClass="noFound"> No Records Found</div>
         </EmptyDataTemplate>
         </asp:GridView>
 

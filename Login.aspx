@@ -20,6 +20,23 @@
             
         } 
 
+        .container{
+            display:flex;
+            margin-left:350px;
+            background-color:white;
+            width:790px;
+            
+            box-shadow: 0 30px 50px rgba(30, 21, 49, 0.3);
+        }
+
+        .side{
+            /*background-color:green;*/
+            border-radius:2px 2px 2px 2px;
+        }
+
+        div #Image2{
+            
+        }
         #form1{
             margin:8vw 0px;
             border:none;
@@ -28,13 +45,14 @@
 
         .card-body{
             padding: 30px 20px 20px 20px;
-            border-radius: 0px 0px 8px 8px;
-            box-shadow: 0 30px 50px rgba(30, 21, 49, 0.3);
+            border-radius: 0px 0px 0px 0px;
+            border:none;
         }
         
         p #btnLogin{
             background-color:green;
-            padding:5px;   
+            padding:5px;  
+            width:244px;
         }
 
         p #btnLogin:hover{
@@ -48,12 +66,12 @@
     <form id="form1" runat="server" class="form-control">
         <center>
             <div class="container">
-                <div class="card text-white" style="width:25vw; background-color:#5672F7;">
+                <div class="card text-white" style="width:25vw;border:none;">
                     <div class="card-body">
-                        <p style="font-size:20px;">
-                            Login</p>
+                        <p style="font-size:20px; color:black; font-weight:bold;">
+                            Welcome Back</p>
                         <p>
-                            <asp:Image ID="Image1" runat="server" Height="111px" ImageUrl="~/Images/user.png" Width="118px" />
+                            <asp:Image ID="Image1" runat="server" Height="112px" ImageUrl="~/Images/usericon.png" Width="112px" />
                         </p>
 
                         <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="Red" Visible="False"></asp:Label>
@@ -63,7 +81,7 @@
                             </div>
                         
                             <div class="form-group">
-                                <asp:TextBox ID="txtPass" runat="server" Height="30px" TextMode="Password" Width="241px" placeholder="Password" CssClass="form-control"></asp:TextBox>
+                                <asp:TextBox ID="txtPass" runat="server" Height="35px" TextMode="Password" Width="241px" placeholder="Password" CssClass="form-control"></asp:TextBox>
                             </div>
 
                         <%--<asp:CheckBox ID="CheckBox1" Text="Show Password" runat="server" onchange="document.getElementById('CheckBox1').type=this.checked ? 'text' : 'password'"/>--%>
@@ -73,9 +91,13 @@
 
                         
                             <p>
-                                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/SignupPage.aspx" ForeColor="White" OnClick="LinkButton1_Click">Don't have account? Register here</asp:LinkButton>
+                                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/SignupPage.aspx" ForeColor="#003300" OnClick="LinkButton1_Click">Don't have account? Register here</asp:LinkButton>
                              </p>
                     </div>
+                </div>
+
+                <div class="side">
+                    <asp:Image ID="Image2" runat="server" CssClass="img" Height="420px" ImageUrl="~/Images/graphic.png" Width="400px" />
                 </div>
             </div>
         </center>

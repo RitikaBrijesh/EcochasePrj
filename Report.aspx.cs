@@ -17,7 +17,7 @@ namespace Ecochase
         SqlDataReader sdr;
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text= "Welcome " + Session["user"].ToString();
+            Label1.Text= "Welcome " + Session["user"].ToString()+"!";
         }
 
         protected void btnFilter_Click(object sender, EventArgs e)

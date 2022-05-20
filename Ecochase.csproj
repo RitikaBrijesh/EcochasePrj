@@ -1874,8 +1874,7 @@
     <Content Include="Images\banner_3.jpg" />
     <Content Include="Images\banner_4.jpg" />
     <Content Include="Images\bulb.jpeg" />
-    <Content Include="Images\envion.png" />
-    <Content Include="Images\First.png" />
+    <Content Include="Images\graphic.png" />
     <Content Include="Images\logo1.jpeg" />
     <Content Include="Images\opt1.png" />
     <Content Include="Images\opt2.png" />
@@ -1883,13 +1882,9 @@
     <Content Include="Images\opt4.png" />
     <Content Include="Images\opt5.png" />
     <Content Include="Images\opt6.png" />
-    <Content Include="Images\organicproducts_desc.png" />
-    <Content Include="Images\plant_desc.png" />
-    <Content Include="Images\scorelbl %282%29.png" />
-    <Content Include="Images\seperate_waste.desc.png" />
-    <Content Include="Images\thrift_desc.png" />
-    <Content Include="Images\user.png" />
-    <Content Include="Images\volunteer_cleaning.png" />
+    <Content Include="Images\sign.png" />
+    <Content Include="Images\Story1.png" />
+    <Content Include="Images\usericon.png" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="Report.aspx" />

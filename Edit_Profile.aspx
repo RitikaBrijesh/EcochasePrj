@@ -3,6 +3,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
+
+        .user{
+
+        }
         .btn{
             background-color:green;
             margin-left:220px;
@@ -42,6 +46,12 @@
         .user{
             text-align:center;
             margin-left:200px;
+        }
+
+        .notsaved{
+            text-align:center;
+            margin-left:200px;
+            color:red;
         }
         /*Name*/
         .Name{
@@ -122,11 +132,11 @@
                 <asp:Label ID="lblUpdate" CssClass="user" runat="server" Text="Label1" Visible="True" Font-Bold="True" Font-Size="Large" ForeColor="#000099"></asp:Label>
             &nbsp;</p>
             <p>
-                &nbsp;<asp:Label ID="Label1" runat="server" Text="Label" Visible="False" Font-Bold="True" Font-Size="Large" ForeColor="#000099"></asp:Label>
+                &nbsp;<asp:Label ID="Label1" runat="server" CssClass="user" Text="Label" Visible="False" Font-Bold="True" Font-Size="Large" ForeColor="#000099"></asp:Label>
     
                 &nbsp;</p>
             <p>
-                <asp:Label ID="Label2" runat="server" Text="Label" Visible="False" Font-Bold="True" Font-Size="Large" ForeColor="#000099"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Label" CssClass="notsaved" Visible="False" Font-Bold="True" Font-Size="Large" ForeColor="#000099"></asp:Label>
         
             </p>
             <div class="Name">

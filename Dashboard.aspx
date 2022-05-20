@@ -220,7 +220,7 @@
 
     <div class="purchase">
         <asp:ImageButton ID="act4" runat="server" Height="159px" ImageUrl="~/Images/opt4.png" OnClick="act4_Click" Width="159px" />
-        <p id="desc4"><br/><span id="activity">Purchase Organic Products </span><br/><br/>
+        <p id="desc4"><br/><span id="activity">Purchase Organic Products (2 Points)</span><br/><br/>
                 Reduce use of artificial Reagents, support organic agriculture.
         </p>
     </div>
@@ -235,7 +235,7 @@
 
     <div class="clean">
         <asp:ImageButton ID="act6" runat="server" Height="159px" ImageUrl="~/Images/opt6.png" OnClick="act6_Click" Width="159px" />
-        <p id="desc6"><br/><span id="activity">Volunteering Cleaning</span><br/><br/>
+        <p id="desc6"><br/><span id="activity">Volunteering Cleaning (5 Points)</span><br/><br/>
             Participate/Volunteer in cleaning programs around <br/> and beyond your locality.
         </p>
     </div>

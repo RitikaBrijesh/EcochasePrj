@@ -22,7 +22,7 @@ namespace Ecochase
             con.Open();
             if (!IsPostBack)  //check if the page is loaded for first time
             {
-                Label1.Text = "Welcome " + Session["user"].ToString();
+                Label1.Text = "Welcome " + Session["user"].ToString()+"!";
                 show();
                 
             }
