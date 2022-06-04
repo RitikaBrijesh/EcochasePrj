@@ -24,7 +24,7 @@ namespace Ecochase
         {
             try
             {
-                con = new SqlConnection(@"Data Source=DESKTOP-2AJ3R13\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
+                con = new SqlConnection(@"Data Source=DESKTOP-KMMSKU7\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
                 con.Open();
 
                 cmd = new SqlCommand("select COUNT(*)FROM signUp WHERE username='" + txtUser.Text + "' and userPasswd='" + txtPass.Text + "' ",con);

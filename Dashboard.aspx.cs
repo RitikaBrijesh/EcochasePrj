@@ -18,7 +18,7 @@ namespace Ecochase
         protected void Page_Load(object sender, EventArgs e)
         {
             
-            con = new SqlConnection(@"Data Source=DESKTOP-2AJ3R13\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=DESKTOP-KMMSKU7\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
             con.Open();
             if (!IsPostBack)  //check if the page is loaded for first time
             {

@@ -18,10 +18,10 @@ namespace Ecochase
         SqlDataReader dr;
         protected void Page_Load(object sender, EventArgs e)
         {
-            con = new SqlConnection(@"Data Source=DESKTOP-2AJ3R13\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=DESKTOP-KMMSKU7\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
             con.Open();
         }
-
+        
         protected void TextBox4_TextChanged(object sender, EventArgs e)
         {
 
@@ -49,7 +49,7 @@ namespace Ecochase
             }
             catch(SqlException ex)
             {
-                Response.Write("Username already exists");
+                Response.Write(ex);
             }
 
             con.Close();

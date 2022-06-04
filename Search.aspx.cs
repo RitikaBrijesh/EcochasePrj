@@ -18,7 +18,7 @@ namespace Ecochase
         protected void Page_Load(object sender, EventArgs e)
         {
             txtSearch.Focus();
-            con = new SqlConnection(@"Data Source=DESKTOP-2AJ3R13\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=DESKTOP-KMMSKU7\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
             con.Open();
 
             //string str = ("SELECT Fname,username,userAdd from signUp; select sum(score) from usrActivity");
@@ -50,7 +50,7 @@ namespace Ecochase
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            con = new SqlConnection(@"Data Source=DESKTOP-2AJ3R13\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=DESKTOP-KMMSKU7\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
             try
             {
                 con.Open();

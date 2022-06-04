@@ -19,7 +19,7 @@ namespace Ecochase
         {
             if(!IsPostBack)
             {
-                con = new SqlConnection(@"Data Source=DESKTOP-2AJ3R13\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
+                con = new SqlConnection(@"Data Source=DESKTOP-KMMSKU7\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
                 con.Open();
 
                 lblUpdate.Text = "Welcome " + Session["user"].ToString()+"!";
@@ -48,7 +48,7 @@ namespace Ecochase
 
         protected void btnUpdate_Click(object sender, EventArgs e)
             {
-            con = new SqlConnection(@"Data Source=DESKTOP-2AJ3R13\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=DESKTOP-KMMSKU7\SQLEXPRESS;Initial Catalog=ecochasePrj;Integrated Security=True");
             try
             {
                 con.Open();
